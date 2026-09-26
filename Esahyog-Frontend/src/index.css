@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary Brand Colors */
+  --color-primary-dark: 30, 41, 59;
+  --color-primary-light: 241, 245, 249;
+
+  /* Accent Colors */
+  --color-accent-sky: 14, 165, 233;
+  --color-accent-cyan: 34, 211, 238;
+
+  /* Text and Utility Colors */
+  --color-text-default: 15, 23, 42;
+  --color-text-light: 148, 163, 184;
+  --color-text-white: 255, 255, 255;
+
+  /* Card/Border Colors */
+  --color-card-background: 255, 255, 255;
+  --color-border: 226, 232, 240;
+}
+
+body {
+  background-color: var(--color-primary-light);
+  color: var(--color-text-default);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
