@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { API_BASE_URL } from "../../config/env";
+
 import {
   clearAuthSession,
   getAuthToken,
@@ -11,6 +11,7 @@ import {
 import { AuthContext } from "./AuthContext";
 
 export const AuthProvider = ({ children }) => {
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
   const navigate = useNavigate();
   const [user, setUserState] = useState(() => {
     const savedToken = getAuthToken();
