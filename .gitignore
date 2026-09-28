@@ -34,3 +34,5 @@ lerna-debug.log*
 
 # Backend generated files
 uploads/
+
+seedAdmin.js
